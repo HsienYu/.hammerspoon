@@ -43,9 +43,9 @@ hs.loadSpoon("ModalMgr")
 if not hspoon_list then
     hspoon_list = {
         "AClock",
+        "AppLauncher",
         "KSheet",
         "CountDown",
-        "appM",
         "WinWin",
     }
 end
@@ -54,6 +54,23 @@ end
 for _, v in pairs(hspoon_list) do
     hs.loadSpoon(v)
 end
+
+----------------------------------------------------------------------------------------------------
+-- AppLauncherM
+
+spoon.AppLauncher:bindHotkeys({
+    b = "Safari Technology Preview",
+    c = "Calendar",
+    e = "Mail",
+    f = "Firefox Developer Edition",
+    g = "Gitkraken",
+    n = "Notes",
+    r = "Reminders",
+    t = "iTerm",
+    s = "Slack",
+    m = "Emacs",
+    v = "Visual Studio Code",
+})
 
 ----------------------------------------------------------------------------------------------------
 -- countdownM
