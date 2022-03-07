@@ -19,7 +19,7 @@ function obj:init()
     self.canvas[1] = {
         type = "text",
         text = "",
-        textFont = "Droid Sans Mono",
+        textFont = "Arial",
         textSize = 90,
         textColor = {hex="#4dff00"},
         textAlignment = "center",
