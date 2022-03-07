@@ -19,9 +19,9 @@ function obj:init()
     self.canvas[1] = {
         type = "text",
         text = "",
-        textFont = "Courier-Bold",
+        textFont = "Droid Sans Mono",
         textSize = 90,
-        textColor = {hex="#9BCA53"},
+        textColor = {hex="#4dff00"},
         textAlignment = "center",
     }
 end
@@ -47,7 +47,7 @@ function obj:toggleShow()
         })
         self.canvas[1].text = os.date("%H:%M")
         self.canvas:show()
-        self.timer = hs.timer.doAfter(4, function()
+        self.timer = hs.timer.doAfter(3, function()
             self.canvas:hide()
             self.timer = nil
         end)
