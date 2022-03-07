@@ -74,13 +74,14 @@ local function generateHtml(application)
         <style type="text/css">
             *{margin:0; padding:0;}
             html, body{
-              background-color:#eee;
+              background-color:rgba(0,0,0,0.6);
               font-family: arial;
               font-size: 13px;
+              color:#79FD06;
             }
             a{
               text-decoration:none;
-              color:#000;
+              color:#79FD06;
               font-size:12px;
             }
             li.title{ text-align:center;}
@@ -90,7 +91,7 @@ local function generateHtml(application)
               left: 0;
               right: 0;
               height: 48px;
-              background-color:#eee;
+              background-color:rgba(0,0,0,0.6);
             }
             header{
               position: fixed;
@@ -98,7 +99,7 @@ local function generateHtml(application)
               left: 0;
               right: 0;
               height:48px;
-              background-color:#eee;
+              background-color:rgba(0,0,0,0.6);
               z-index:99;
             }
             footer{ bottom: 0; }
@@ -106,8 +107,8 @@ local function generateHtml(application)
             footer hr {
               border: 0;
               height: 0;
-              border-top: 1px solid rgba(0, 0, 0, 0.1);
-              border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+              border-top: 1px solid rgba(121, 255, 0, 0.3);
+              border-bottom: 1px solid rgba(121, 255, 0, 0.3);
             }
             .title{
                 padding: 15px;
@@ -162,7 +163,7 @@ local function generateHtml(application)
             <hr />
               <div class="content" >
                 <div class="col">
-                   <a >  keybinding panel </a>
+                   <a >  KEYBINDINGS  </a>
                 </div>
               </div>
           </footer>

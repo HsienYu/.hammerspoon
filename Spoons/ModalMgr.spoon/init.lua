@@ -31,15 +31,15 @@ function obj:init()
     obj.modal_tray[1] = {
         type = "circle",
         action = "fill",
-        fillColor = {hex = "#FFFFFF", alpha = 0.7},
+        fillColor = {hex = "#000000", alpha = 0.7},
     }
     obj.which_key = hs.canvas.new({x = 0, y = 0, w = 0, h = 0})
     obj.which_key:level(hs.canvas.windowLevels.tornOffMenu)
     obj.which_key[1] = {
         type = "rectangle",
         action = "fill",
-        fillColor = {hex = "#EEEEEE", alpha = 0.95},
-        roundedRectRadii = {xRadius = 10, yRadius = 10},
+        fillColor = {hex = "#000000", alpha = 0.8},
+        roundedRectRadii = {xRadius = 5, yRadius = 5},
     }
 end
 
@@ -95,8 +95,8 @@ function obj:toggleCheatsheet(iterList, force)
                     type = "text",
                     text = keys_pool[idx],
                     textFont = "Courier-Bold",
-                    textSize = 16,
-                    textColor = {hex = "#2390FF", alpha = 1},
+                    textSize = 14,
+                    textColor = {hex = "#4dff00", alpha = 1},
                     textAlignment = "left",
                     frame = {
                         x = tostring(40 / (cres.w / 5 * 3)),
@@ -110,8 +110,8 @@ function obj:toggleCheatsheet(iterList, force)
                     type = "text",
                     text = keys_pool[idx],
                     textFont = "Courier-Bold",
-                    textSize = 16,
-                    textColor = {hex = "#2390FF"},
+                    textSize = 14,
+                    textColor = {hex = "#4dff00"},
                     textAlignment = "right",
                     frame = {
                         x = "50%",
@@ -150,7 +150,7 @@ function obj:activate(idList, trayColor, showKeys)
             w = 20,
             h = 20
         })
-        obj.modal_tray[1].fillColor = {hex = trayColor, alpha = 0.7}
+        obj.modal_tray[1].fillColor = {hex = trayColor, alpha = 0.9}
         obj.modal_tray:show()
     end
     if showKeys then
