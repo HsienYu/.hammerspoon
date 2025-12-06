@@ -94,6 +94,10 @@ end
 
 function obj:stash()
     local cwin = hs.window.focusedWindow()
+    if not cwin then
+        hs.alert.show("No focused window!")
+        return
+    end
     local winid = cwin:id()
     local winf = cwin:frame()
     local id_idx = isInHistory(winid)
